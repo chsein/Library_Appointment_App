@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.mobilecomputing.library.ui.MainFragment"
+        android:label="Main" >
+        <action
+            android:id="@+id/action_mainFragment_to_gridFragment"
+            app:destination="@id/gridFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_usageFragment"
+            app:destination="@id/usageFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_fulltimeFragment"
+            app:destination="@id/fulltimeFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/gridFragment"
+        android:name="com.mobilecomputing.library.ui.GridFragment"
+        android:label="Grid">
+        <argument
+            android:name="room"
+            app:argType="com.mobilecomputing.library.Room"/>
+    </fragment>
+    <fragment
+        android:id="@+id/usageFragment"
+        android:name="com.mobilecomputing.library.ui.UsageFragment"
+        android:label="Usage" />
+    <fragment
+        android:id="@+id/fulltimeFragment"
+        android:name="com.mobilecomputing.library.ui.FullTimeFragment"
+        android:label="FullTime" />
+
+</navigation>

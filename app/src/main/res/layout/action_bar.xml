@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/actionTitle"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="University of Texas at Austin"
+        android:textColor="#FFFFFF"
+        android:gravity="center"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/actionUsage"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:src="@drawable/baseline_view_headline_24"
+        app:tint="#FFFFFF" />
+
+</LinearLayout>

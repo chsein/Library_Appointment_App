@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Building Name TextView -->
+    <TextView
+        android:id="@+id/text_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_margin="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_margin="3dp"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_margin="3dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_building"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Building"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_margin="8dp" />
+
+    <!-- Room Name TextView -->
+    <TextView
+        android:id="@+id/text_room"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Room Name"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_margin="8dp" />
+
+    <!-- Seat Number TextView -->
+    <TextView
+        android:id="@+id/text_seat_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seat Number"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_margin="8dp" />
+
+    <!-- Remaining Time TextView -->
+    <TextView
+        android:id="@+id/text_remaining_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time Left: 00:00"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Return Seat"
+        android:id="@+id/returnseat"
+        android:layout_margin="3dp"/>
+
+    <fragment
+        android:id="@+id/mapFrag"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
